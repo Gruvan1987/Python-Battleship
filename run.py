@@ -16,5 +16,10 @@ else:
 random_number = random.randint(0, top_range)
 
 while True:
-    print("")
-    break
+    player = input("Make your guess: ")
+    if player.isdigit():
+        player = int(player)
+    else:
+        print('You need to type a number the next time.')
+        continue
+        
