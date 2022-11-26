@@ -1,6 +1,6 @@
 import random
 
-top_range = input("Hello, welcome to the guess Game! please typ in a number: ")
+top_range = input("Hello, welcome to The Guess Game! please typ in a number: ")
 
 if top_range.isdigit():
     top_range = int(top_range)
