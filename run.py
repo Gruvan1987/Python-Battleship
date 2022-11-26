@@ -14,8 +14,10 @@ else:
     quit()
 
 random_number = random.randint(0, top_range)
+guesses = 0
 
 while True:
+    guesses += 1
     player = input("Make your guess: ")
     if player.isdigit():
         player = int(player)
@@ -23,3 +25,13 @@ while True:
         print('You need to type a number the next time.')
         continue
         
+    if player == random_number:
+        print("Yeah =) You Got It Correct")
+        break
+    else:
+        if player > random_number:
+            print("You are above the number!")
+        else:
+            print("You are below the number!")
+
+print("You got it corret in", guesses, "guesses")
